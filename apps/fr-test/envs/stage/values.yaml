@@ -1,0 +1,9 @@
+image:
+  tag: df9c7df
+ingress:
+  enabled: true
+  ingressClassName: public
+  entries:
+    - name: public
+      hosts:
+        - hostname: fr-test-stage.apps.nonprod.luit.onglueops.com

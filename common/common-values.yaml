@@ -1,6 +1,6 @@
 
 image:
-  registry: ghcr.io/GlueOps-LUIT
+  registry: ghcr.io/glueops-luit
   port: 8080
 
 service:

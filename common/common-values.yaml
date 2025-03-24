@@ -1,0 +1,35 @@
+
+image:
+  registry: ghcr.io/GlueOps-LUIT
+  port: 8080
+
+service:
+  enabled: true
+podDisruptionBudget:
+  enabled: true
+
+
+ingress:
+  enabled: true
+  ingressClassName: public
+  annotations:
+    cert-manager.io/cluster-issuer: letsencrypt
+
+    
+deployment:
+  replicas: 2
+  enabled: true
+  imagePullSecrets: regcred-prod-regcred
+  # readinessProbe:
+  #   httpGet:
+  #     path: /
+  #     port: 80
+  #   initialDelaySeconds: 10
+  #   periodSeconds: 30
+  #   timeoutSeconds: 30
+  resources:
+    limits:
+      cpu: 1000m
+      memory: 512Mi
+
+

@@ -1,0 +1,11 @@
+externalSecret:
+  enabled: true
+  refreshInterval: 5s
+  secrets:   
+    regcreds:
+      name: regcred
+      type: kubernetes.io/dockerconfigjson
+      dataFrom:
+        key: secret/regcred
+
+

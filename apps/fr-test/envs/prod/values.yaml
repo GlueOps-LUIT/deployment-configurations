@@ -1,0 +1,9 @@
+image:
+  tag: v0.3.0
+ingress:
+  enabled: true
+  ingressClassName: public
+  entries:
+    - name: public
+      hosts:
+        - hostname: fr-test.apps.nonprod.luit.onglueops.com

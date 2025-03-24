@@ -1,5 +1,5 @@
 image:
-  tag: df9c7df
+  tag: 3a51374
 ingress:
   enabled: true
   ingressClassName: public

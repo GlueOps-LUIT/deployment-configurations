@@ -19,7 +19,7 @@ ingress:
 deployment:
   replicas: 2
   enabled: true
-  imagePullSecrets: regcred-prod-regcred
+  imagePullSecrets: regcred-prod-regcreds
   # readinessProbe:
   #   httpGet:
   #     path: /

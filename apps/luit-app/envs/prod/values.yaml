@@ -1,0 +1,9 @@
+image:
+  tag: v0.7.0
+ingress:
+  enabled: true
+  ingressClassName: public
+  entries:
+    - name: public
+      hosts:
+        - hostname: luit-app.apps.nonprod.luit.onglueops.com

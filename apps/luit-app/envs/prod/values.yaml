@@ -7,3 +7,5 @@ ingress:
     - name: public
       hosts:
         - hostname: luit-app.apps.nonprod.luit.onglueops.com
+deployment:
+  replicas: 3
